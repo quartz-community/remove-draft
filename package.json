@@ -67,7 +67,18 @@
     "dependencies": [],
     "defaultOrder": 50,
     "defaultEnabled": true,
-    "defaultOptions": {}
+    "defaultOptions": {},
+    "capabilities": {
+      "requires": {
+        "data": [
+          {
+            "name": "frontmatter",
+            "from": "note-properties",
+            "reason": "frontmatter is not parsed, so pages marked `draft: true` ARE PUBLISHED"
+          }
+        ]
+      }
+    }
   },
   "engines": {
     "node": ">=22",
